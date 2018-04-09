@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SauBITU - Products</title>
+
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Companies.html">Companies</a>
+                    </li>   
+                    </ul>
+                </div>  
+                </nav>  <br><br> 
+
+
+
+                <p>
+                    <button onClick="writeDATA()">Click</button>
+                </p>
+        
+        <div class="container"> 
+            <h1 class="text-center">Products</h1>
+            <div class="row">
+                <table class="table table-responsive-sm table-bordered table-condensed table-striped table-hover table-dark table-sm">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Company</th>
+                            <th>Name</th>
+                            <th>Longitude</th>
+                            <th>Latitude</th>
+                            <th>HarvestDate</th>
+                            <th>W. Hours</th>
+                            <th>T. Hours</th>    
+                            <th class="text-center">Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+
+                    <tbody id="tableBody1">
+                        
+                    </tbody>
+
+                </table>
+            </div>
+
+            
+                    
+
+
+
+
+        </div>
+
+
+        <script src="js/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+         var config = {
+			apiKey: "AIzaSyCcRReELU3mlitMKRuqv9HgHyk8HRS4I1g",
+			authDomain: "saubitu.firebaseapp.com",
+			databaseURL: "https://saubitu.firebaseio.com",
+			projectId: "saubitu",
+			storageBucket: "saubitu.appspot.com",
+			messagingSenderId: "891171569026"
+		  };
+		firebase.initializeApp(config);
+        </script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="libs/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="ProductsDatabase.js"></script>
+    </body>
+</html> 
